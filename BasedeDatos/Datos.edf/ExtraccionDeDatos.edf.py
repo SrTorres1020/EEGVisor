@@ -12,8 +12,8 @@ import mne
 file = "S001R01.edf"
 
 #Extrae el raw data que corresponde a los voltajes
-raw = mne.io.read_raw_edf('S001R01.edf')
-rawdata = raw.get_data()
+data = mne.io.read_raw_edf('S001R01.edf')
+rawdata = data.get_data()
 
 #Transpone la matriz para su exportacion a SQL
 rawdatatranspuesta = np.transpose(rawdata)
