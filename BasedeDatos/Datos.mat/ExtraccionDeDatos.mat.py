@@ -13,3 +13,4 @@ df = pd.DataFrame(np.transpose(data['EEG']['data']))
 
 # #Genera un archivo .csv
 df.to_csv('C:\\Users\\Fausto\\Documents\\github\\Archivos\\EEG_Depression\\raw_data.csv', index=False)
+
